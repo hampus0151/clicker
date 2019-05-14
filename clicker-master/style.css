@@ -3,11 +3,8 @@ html {
 }
 
 body {
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 62.5%;
-	background-color: #7E8987;
+	background-color: #e0e2db;
 }
-
 main {
 	width: 80%;
 	margin: 0 auto;
@@ -29,6 +26,7 @@ h2 {
 }
 
 p {
+	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 2em;
 }
 
@@ -43,6 +41,7 @@ p {
 	font-size: 4em;
 	text-align: center;
 	padding-right: 20px;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 .menu a {
@@ -73,7 +72,7 @@ article {
 	width:300px;
 	height:300px;
 	border-radius: 200px;
-	background-color: #EB5508;
+	background-color: rgb(24, 136, 33);
 	font-family: 'Permanent Marker', cursive;
 	letter-spacing: .4rem;
 	color: white;
@@ -83,7 +82,7 @@ article {
 #clickerbutton:active {
 	transition-property: border, background-color;
 	transition-duration: 1s;
-	background-color: #812F05;
+	background-color:  rgb(24, 136, 33);
 	border: 40px solid #7E8987;
 }
 #clickerbutton:focus {
@@ -91,18 +90,9 @@ article {
 }
 
 .logo {
-	font-family: 'Audiowide', cursive;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 10em;
 	font-weight: 700;
-}
-
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background-color: rgba(51,51,51,0.8);
 }
 
 #lionSuper {
@@ -119,7 +109,7 @@ footer {
 	width:110px;
 	height:110px;
 	border-radius: 100px;
-	background-color: #EB5508;
+	background-color: rgb(24, 136, 33);
 	font-family: 'Permanent Marker', cursive;
 	letter-spacing: .4rem;
 	border:0px solid #7E8987;
