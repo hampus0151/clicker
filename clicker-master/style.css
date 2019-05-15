@@ -2,9 +2,9 @@ html {
 	font-size: 16px;
 }
 
-body {
-	background-color: #e0e2db;
-}
+ body {
+   background-color: transparent;
+} 
 main {
 	width: 80%;
 	margin: 0 auto;
@@ -117,7 +117,7 @@ article {
 }
 
 .powerUpButton:active {
-	transition-property: border, background-color;
+    transition-property: border;
 	transition-duration: 1s;
 	background-color: #812F05;
 	border: 4px solid #7E8987;
@@ -129,3 +129,20 @@ article {
 #powerText {
 	white-space: pre;
 }
+
+.picture1 {
+	color: white;
+	background-image: url("image/1.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.picture2 {
+    background-color: lightgrey;
+}
+.picture3 {
+	color: white;
+	background-image: url("image/7.jpg");
+	background-repeat: no-repeat;
+  	background-size: 100% 100%;
+}
+

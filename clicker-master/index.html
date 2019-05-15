@@ -5,95 +5,83 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">  
 	<title>Clicker</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="destructed.css">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<body>
+    <body>
 	<main>
-			<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-#e0e2db">
-					<h1 class="navbarr" href="#">Clicker</h1>
+			<nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark ">
+                    
+					<h1 class="navbarr " href="#">Clicker</h1>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 					  <span class="navbar-toggler-icon"></span>
 					</button>
 					<div class="collapse navbar-collapse" id="navbarText">
 					  <ul class="navbar-nav mr-auto">
-						<li class="nav-item active">
-						  <a class="nav-link" href="#welcome">welcome <span class="sr-only">(current)</span></a>
+						<li class="nav-item">
+						  <a class="nav-link" href="#welcome">Welcome <span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item">
-						  <a class="nav-link" href="#clicker">Game</a>
+						  <a class="nav-link" href="#game">Game</a>
 						</li>
 						<li class="nav-item">
 						  <a class="nav-link" href="#about">About</a>
 						</li>
 					  </ul>
-					  <span class="navbar-text">
-						Navbar text with an inline element
-					  </span>
 					</div>
 				  </nav>
 		<!-- huvudmeny -->
 		<header class="top">
-			<h1 class="logo">Clicker</h1>
+			<h1 class="logo ">Clicker</h1>
 			
-			<!-- <nav class="menu">
-				<ul>
-					<li><a href="#welcome">Welcome</a></li>
-					<li><a href="#clicker">Game</a></li>
-					<li><a href="#about">About</a></li>
-				</ul>
-			</nav> -->
-			
+				
 		</header>
 		<section>
+                <div class="picture1">
 			<article id="welcome">
 					<br>
-					<br>
-					<br>
-					<br>
 				<header>
-					<h2>Welcome</h2>
+					<h1>Welcome</h1>
 					<p>Posted at <time>2018-01-19</time></p>
 				</header>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam ullam a iusto, tempora quas expedita nemo, doloremque, incidunt eveniet architecto molestiae voluptatibus quae quaerat hic possimus? Eius, a ab quis.</p>
-			</article>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam ullam a iusto, tempora quas expedita nemo, doloremque, incidunt eveniet architecto molestiae voluptatibus quae quaerat hic possimus? Eius, a ab quis.</p>
+            </div>
+						</article>
+						<div class="picture2">
 			<article id="clicker">
-					<br>
-					<br>
-					<br>
 					<br>
 				<header>
 					<h2>Game</h2>
-					<p>Posted at <time>2018-01-19</time></p>
-				</header>
-				<p><quote>"Instant gratification"</quote> - Hampus 2018</p>
+                    <p>Posted at <time>2018-01-19</time></p>
+                </header>
+              
 				<div id="game">
-					<button id="clickerbutton">ZOO!</button>
+						<br>
+					<button id="clickerbutton">Click</button>
 				</div>
 				<div id="score"></div>
 				<div id="powerUps">
-					<button id="lejon" class="powerUpButton" accesskey="l">Lejon</button>
+					<button id="lejon" class="powerUpButton" accesskey="l">gun</button>
 					<button id="lionSuper" class="powerUpButton" accesskey="s">Super Lion!</button>
-					<button id="zebra" class="powerUpButton" accesskey="z">Zebra</button>					
+					<button id="zebra" class="powerUpButton" accesskey="z">Rifle</button>					
 					<p id="powerText"></p>
-				</div>
-			</article>
+							</article>
+						</div>
+            <div class="picture3">
 			<article id="about">
-				<br>
-				<br>
-				<br>
-				<br>
+					<br>
 				<header>
 					<h2>About</h2>
 					<p>Posted at <time>2018-01-19</time></p>
 				</header>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam ullam a iusto, tempora quas expedita nemo, doloremque, incidunt eveniet architecto molestiae voluptatibus quae quaerat hic possimus? Eius, a ab quis.</p>
-			</article>
+						</article>
+						</div>
 		</section>
-	</main>
+    </main>
 	<script src="spel.js"></script>
 </body>
 </html>
-<
