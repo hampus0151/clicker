@@ -137,11 +137,14 @@ article {
 	background-size: 100% 100%;
 }
 .picture2 {
-    background-color: lightgrey;
+	color: white;
+    background-image: url("image/2.jpg");
+	background-repeat: no-repeat;
+  	background-size: 100% 100%;
 }
 .picture3 {
 	color: white;
-	background-image: url("image/7.jpg");
+	background-image: url("image/3.jpg");
 	background-repeat: no-repeat;
   	background-size: 100% 100%;
 }

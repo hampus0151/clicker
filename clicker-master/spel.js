@@ -22,8 +22,8 @@ var superLionPurchased = 0;
 
 /* startvärden */
 scoreText.textContent = "Points: 0";
-lionButton.textContent = "Lejon " + lejonCost;
-zebraButton.textContent = "Zebra " + zebraCost;
+lionButton.textContent = "Gun " + lejonCost;
+zebraButton.textContent = "Rifle " + zebraCost;
 
 /* click event + logic */
 button.addEventListener("click", function() {
@@ -42,7 +42,7 @@ zebraButton.addEventListener("click", function() {
 	if (bank >= zebraCost && zebraTimer == 0) {
 		bank -= zebraCost;
 		zebraTimer += 10;
-		powerText.textContent += "Köpte zebra\n";
+		powerText.textContent += "Bought Gun\n";
 
 		// Lägg till setInterval med en funktion som laddas varje sekund
 		zebra = setInterval(function() {
@@ -51,14 +51,14 @@ zebraButton.addEventListener("click", function() {
 			zebraTimer--;
 
 			if (zebraTimer == 0) {
-				powerText.textContent += "Slut på zebra\n";
+				powerText.textContent += "No Rifle\n";
 				clearInterval(zebra);  // kalla på clearInterval för att rensa setInterval
 			}
 		}, 1000);
 	} else if (zebraTimer > 0) {
-		powerText.textContent += "Du har redan zebra\n";
+		powerText.textContent += "Already Rifle\n";
 	} else {
-		powerText.textContent += "Du har inte råd med zebra\n";
+		powerText.textContent += "No money no Rifle\n";
 	}
 }, true);
 
@@ -76,11 +76,11 @@ lionButton.addEventListener("click", function() {
 			lionSuper.style.display = "inline";	// visa knappen
 		}
 
-		lionButton.textContent = "Lejon " + Math.floor(lejonCost);
-		powerText.textContent += "Köpte lejon\n";
+		lionButton.textContent = "Gun " + Math.floor(lejonCost);
+		powerText.textContent += "Bought gun\n";
 		scoreText.textContent = "Points: " + Math.floor(bank); // sätt textvärdet i p elementet till bank.
 	} else {
-		powerText.textContent += "Du har inte råd med lejon\n";
+		powerText.textContent += "No money no Gun\n";
 	}
 }, true);
 
@@ -89,7 +89,7 @@ lionSuper.addEventListener("click", function() {
 	lionSuper.style.display = "none";	// göm knappen
 	bank = bank * 10;
 	superLionPurchased = 1;
-	powerText.textContent += "DU KÖPTE SUPERLEJON!\n";
+	powerText.textContent += "Bought super Gun!\n";
 	scoreText.textContent = "Points: " + Math.floor(bank);
 }, true);
 
